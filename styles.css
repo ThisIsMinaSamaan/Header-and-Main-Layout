@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+
+body{
+    font-family: "Roboto",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.top-head{
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f5f5;
+    height: 40px;
+}
+
+.links{
+    align-self: center;
+    margin-left: 50px;
+}
+
+.links a, 
+.account > .account-lbl > .account-menu .sign a{
+    color:#a5a3a8;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.dropdowns{
+    margin-left: auto;
+    margin-right: 50px;
+    display: flex;
+    gap: 10px;
+    align-self: center;
+}
+
+.account{
+    position: relative;
+    display: inline-block;
+
+}
+
+.account-lbl{
+    height: 30px;
+    cursor: pointer;
+}
+
+.account-menu{
+    background-color: white;
+    padding-left: 0%;
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: max-content;
+    border: black solid 1px;
+    top: 100%;
+    margin-top: 10px;
+}
+
+.account-menu .sign{
+   padding: 10px 5px;
+}
+
+.account-lbl > .account-menu .sign:hover{
+    background-color: #e2e2e2;
+}
+
+ .account-lbl > .account-menu > .sign a:hover{
+    text-decoration: underline;
+}
+
+.account > .account-lbl:hover > .account-menu {
+    display: block;
+    top: 100%;
+    min-width: 100%;
+  }
+
+.lang{
+    margin-right: 5px;
+}
+
+/*Start of mid head CSS*/
+
+.mid-head{
+    /* background-color: cornflowerblue; */
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 50px;
+    height: 60px;
+    
+}
+
+.multi{
+    padding: 0 5px;
+    position: relative;
+    margin-right: 0;
+    height: inherit;
+    font-size: 40px;
+    background-color: #3d464d;
+    color: #fcd240;
+}
+
+.shop{
+    padding: 0 5px;
+    position: absolute;
+    margin-left: 0;
+    font-size: 40px;
+    background-color: #fcd240;
+    color: #3d464d;
+}
+
+.search{
+    height: 50px;
+    width: auto;
+    align-items: center;
+}
+
+.search-input{
+    position: relative;
+    width: 500px;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 10px;
+    
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    color:#f8d877;
+    font-size: 20px;
+    padding-top: 10px; 
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;  
+}
+
+.contact{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.customerServ{
+    color: #a2a3a6;
+    font-size: 18px;
+}
+
+.num{
+    font-size: 22px;
+}
+
+
+
+.bot-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: #3d464d;
+
+}
+
+.bot-head .category .menu{
+    background-color: #ffd334;
+    padding: 25px 25px;
+}
+
+.bot-head .category .menu label span{
+    margin: 0 15px 0 5px;
+}
+
+.bot-head .category .menu label{
+    position: relative;
+    cursor: pointer;
+}
+
+.bot-head .category .menu label ul{
+    position: absolute;
+    display: none;
+    list-style: none;
+    
+}
+
+.bot-head .category .menu label:hover > ul{
+    display: block;
+    top: 220%;
+    min-width: 100%;
+    background-color: #ffd334;
+    width: max-content;
+    
+}
+
+.bot-head .category .menu label ul li{
+    padding: 10px;
+}
+
+.bot-head .category .menu label ul li:hover{
+    text-decoration: underline;
+    background-color: #ff7e34;
+}
+
+.bot-head .pages{
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+.bot-head .pages .pages-links{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+    height: 100%;
+}
+
+.bot-head .pages .pages-links .shop-det{
+    position: relative;
+}
+
+.bot-head .pages .pages-links .shop-det ul{
+    display: none;
+    list-style: none;
+    position: absolute;
+    
+}
+
+.bot-head .pages .pages-links .shop-det ul li{
+    color: white;
+    padding: 10px;
+    
+}
+
+.bot-head .pages .pages-links .shop-det ul li:hover{
+    text-decoration: underline;
+    background-color: #465454;
+}
+
+.bot-head .pages .pages-links .shop-det:hover > ul{
+    display: block;
+    top: 220%;
+    min-width: 100%;
+    background-color: #3d464d;
+    width: max-content;
+}
+
+
+
+.bot-head .pages .pages-links li a{
+    color: white;
+    text-decoration: none;
+}
+
+.bot-head .pages .pages-links li a:hover{
+    text-decoration: underline;
+    background-color: #465454;
+}
+
+#Home{
+    color: #ffd334;
+}
+
+
+.bot-head .icons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.bot-head .icons .icon{
+    display: flex;
+    gap: 5px;
+}
+
+.bot-head .icons .icon .icon-num{
+    color: white;
+    border: 1px white solid;
+    border-radius: 50%;
+    width: 1em;
+    line-height: 1em;
+    text-align: center;
+    font-size: 18px;
+}
+
+.bot-head .icons .icon i{
+    font-size: 18px;
+}
+
+.fa-heart, .fa-cart-shopping{
+    color: #ffd334;
+    padding-right: 10px;
+}
